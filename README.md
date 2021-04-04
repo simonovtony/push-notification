@@ -6,7 +6,7 @@ To run the server you need to open the terminal/console to the project directory
 and use next commands.
 
 ```
-cd ./backend
+cd <PROJECT_DIRECTORY>/backend
 npm install
 ```
 
@@ -23,3 +23,19 @@ npm start
 Open the http://localhost:8080 (by default).
 The button sends the push notification to onMessage.
 The firebase cloud messaging dashboard has the testing page to send the push notification to http://localhost:8080.
+
+the frontend app runs similar as the backend
+Use next commands:
+
+```
+cd <PROJECT_DIRECTORY>/frontend
+npm install
+npm start
+```
+
+Pay attention, for listening to the background message the firebase cloud message needs only service worker.
+If someone wants to listen the background notification it needs to check the file which is located to
+
+```
+<PROJECT_DIRECTORY>/frontend/public/firebase-messaging-sw.js
+```
